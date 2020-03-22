@@ -9,9 +9,10 @@
   		<a-asset-item id="robot" src="scene.gltf"></a-asset-item>
 	</a-assets>
 	<!-- use your gltf model -->
-	<a-entity gltf-model="#robot"></a-entity>
 	<!-- a-box position='0 0.5 0' material='opacity: 0.5;'></a-box -->
-	<a-marker-camera preset='hiro'></a-marker-camera>
+	<a-marker-camera preset='hiro'>
+		<a-entity gltf-model="#robot" scale="0.01 0.01 0.01"></a-entity>
+	</a-marker-camera>
   </a-scene>
 </body>
 
